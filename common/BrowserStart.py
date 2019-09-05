@@ -1,5 +1,6 @@
 from common.ReadConfig import getbrowserinfo
 from selenium import webdriver
+from common.CapPic import CapPic
 import os
 def browserstart():
     browsername = getbrowserinfo('browser')
@@ -10,9 +11,6 @@ def browserstart():
     elif browsername == 'Ie':
         driver = webdriver.Ie()
         driver.get(Url)
-
-    else:
-        return False
-    return True
+    CapPic(driver)
 
 
