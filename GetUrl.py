@@ -7,3 +7,18 @@ def GetUrl(url):
     return url
 
 print(GetUrl('https://www.cnblogs.com/111testing/p/9609105.html'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

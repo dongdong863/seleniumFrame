@@ -22,3 +22,33 @@ logger.addHandler(fileh)
 logger.info('info message')
 
 
+
+import os
+import time
+class Logger():
+    def getlog(self):
+        logger = logging.getLogger('LogTest')
+
+        logger.setLevel(logging.info())
+
+        fileh = logging.FileHandler('路径+名称')
+        fileh.setLevel(logging.info())
+
+        logger.addHandler(fileh)
+        logger.info('info message')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
